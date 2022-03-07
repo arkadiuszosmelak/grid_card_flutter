@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:arkadiusz_osmelak_flutter_academy_task_zero/widget/expanded_container_widget.dart';
 
-class FourthGridScreen extends StatefulWidget {
+class FourthGridScreen extends StatelessWidget {
   const FourthGridScreen({Key? key}) : super(key: key);
 
-  @override
-  State<FourthGridScreen> createState() => _FourthGridScreenState();
-}
-
-class _FourthGridScreenState extends State<FourthGridScreen> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -18,10 +13,8 @@ class _FourthGridScreenState extends State<FourthGridScreen> {
           flex: 1,
           child: Column(
             children: const [
-              ExpandedContainerWidget(
-                  flexNumber: 2, containerColor: Colors.red),
-              ExpandedContainerWidget(
-                  flexNumber: 1, containerColor: Colors.grey),
+              ExpandedContainerWidget(flexNumber: 2, widgetNumber: 9),
+              ExpandedContainerWidget(flexNumber: 1, widgetNumber: 7),
             ],
           ),
         ),
@@ -29,12 +22,9 @@ class _FourthGridScreenState extends State<FourthGridScreen> {
           flex: 1,
           child: Column(
             children: const [
-              ExpandedContainerWidget(
-                  flexNumber: 1, containerColor: Colors.green),
-              ExpandedContainerWidget(
-                  flexNumber: 1, containerColor: Colors.black),
-              ExpandedContainerWidget(
-                  flexNumber: 1, containerColor: Colors.brown),
+              ExpandedContainerWidget(flexNumber: 1, widgetNumber: 2),
+              ExpandedContainerWidget(flexNumber: 1, widgetNumber: 0),
+              ExpandedContainerWidget(flexNumber: 1, widgetNumber: 5),
             ],
           ),
         ),
@@ -42,10 +32,12 @@ class _FourthGridScreenState extends State<FourthGridScreen> {
           flex: 1,
           child: Column(
             children: const [
+              ExpandedContainerWidget(flexNumber: 1, widgetNumber: 3),
               ExpandedContainerWidget(
-                  flexNumber: 1, containerColor: Colors.yellow),
-              ExpandedContainerWidget(
-                  flexNumber: 2, containerColor: Colors.purple),
+                flexNumber: 2,
+                widgetNumber: 1,
+                isExpectations: true,
+              ),
             ],
           ),
         ),

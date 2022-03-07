@@ -1,17 +1,21 @@
-# arkadiusz_osmelak_flutter_academy_task_zero
+# Business Card Project
 
-Flutter project
+A business card project created in flutter. This project shows some information about me.
 
-## Getting Started
+## How to Use 
 
-This project is a starting point for a Flutter application.
+**Step 1:**
 
-A few resources to get you started if this is your first Flutter project:
+Download or clone this repo by using the link below:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+https://github.com/arkadiuszosmelak/grid_card_flutter.git
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# grid_card_flutter" 
+**Step 2:**
+
+Go to project root and execute the following command in console to get the required dependencies: 
+
+```
+flutter pub get 
+```

@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:arkadiusz_osmelak_flutter_academy_task_zero/widget/expanded_container_widget.dart';
 
-class ThirdGridScreen extends StatefulWidget {
+class ThirdGridScreen extends StatelessWidget {
   const ThirdGridScreen({Key? key}) : super(key: key);
 
-  @override
-  State<ThirdGridScreen> createState() => _ThirdGridScreenState();
-}
-
-class _ThirdGridScreenState extends State<ThirdGridScreen> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -18,12 +13,9 @@ class _ThirdGridScreenState extends State<ThirdGridScreen> {
           flex: 1,
           child: Column(
             children: const [
-              ExpandedContainerWidget(
-                  flexNumber: 1, containerColor: Colors.grey),
-              ExpandedContainerWidget(
-                  flexNumber: 1, containerColor: Colors.red),
-              ExpandedContainerWidget(
-                  flexNumber: 1, containerColor: Colors.black),
+              ExpandedContainerWidget(flexNumber: 1, widgetNumber: 2),
+              ExpandedContainerWidget(flexNumber: 1, widgetNumber: 5),
+              ExpandedContainerWidget(flexNumber: 1, widgetNumber: 6),
             ],
           ),
         ),
@@ -35,15 +27,16 @@ class _ThirdGridScreenState extends State<ThirdGridScreen> {
                 flex: 1,
                 child: Row(
                   children: const [
-                    ExpandedContainerWidget(
-                        flexNumber: 1, containerColor: Colors.yellow),
-                    ExpandedContainerWidget(
-                        flexNumber: 1, containerColor: Colors.green),
+                    ExpandedContainerWidget(flexNumber: 1, widgetNumber: 0),
+                    ExpandedContainerWidget(flexNumber: 1, widgetNumber: 3),
                   ],
                 ),
               ),
               const ExpandedContainerWidget(
-                  flexNumber: 2, containerColor: Colors.purple),
+                flexNumber: 2,
+                widgetNumber: 1,
+                isExpectations: true,
+              ),
             ],
           ),
         ),
